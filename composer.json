@@ -1,0 +1,32 @@
+{
+  "name" : "snow/validation",
+  "type": "library",
+  "description": "validation is a validate library",
+  "keywords": ["validation", "validate"],
+  "authors": [
+    {
+      "name": "zhaoy",
+      "email": "zhaoyang.12@qq.com"
+    }
+  ],
+  "require" : {
+    "php" : ">=7.0",
+    "ext-ctype" : "*",
+    "ext-fileinfo" : "*",
+    "ext-mbstring" : "*",
+    "ext-json" : "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5.2"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "Snow\\Validation\\" : "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Snow\\Validation\\": "tests/"
+    }
+  }
+}
